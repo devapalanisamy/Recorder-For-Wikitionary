@@ -36,6 +36,9 @@
     <Compile Include="TinyIoC.cs" />
     <Compile Include="Source\Webservice\IWebService.cs" />
     <Compile Include="Source\ViewModels\BaseViewModel.cs" />
+    <Compile Include="Source\ViewModels\LoginViewModel.cs" />
+    <Compile Include="Source\CustomIOC.cs" />
+    <Compile Include="Source\ViewModels\RegisterViewModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
