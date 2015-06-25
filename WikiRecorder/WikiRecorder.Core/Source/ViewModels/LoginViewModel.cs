@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace WikiRecorder.Core
 {
@@ -11,7 +12,7 @@ namespace WikiRecorder.Core
 		public string UserName{ get; set; }
 		public string Password{ get; set; }
 
-		public async string LoginButtonTapped()
+		public async Task<string> LoginButtonTapped()
 		{
 			if (string.IsNullOrEmpty(UserName))
 				throw new Exception ("Username is blank");
@@ -20,13 +21,16 @@ namespace WikiRecorder.Core
 				throw new Exception ("Password is blank");
 				
 			IsBusy = true;
+			string sessionId;
 			try
 			{
-				string userId =  await webservice.Login(UserName, Password);
+				sessionId =  await webservice.Login(UserName, Password);
 			}
 			finally {
 				IsBusy = false;
 			}
+
+			return sessionId;
 		}
 	}
 }

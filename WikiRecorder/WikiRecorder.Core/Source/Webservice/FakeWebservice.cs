@@ -9,7 +9,7 @@ namespace WikiRecorder.Core
 		public int SleepDuration { get; set; }
 		public FakeWebservice ()
 		{
-			SleepDuration = 1;
+			SleepDuration = 2;
 		}
 
 		private Task Sleep()

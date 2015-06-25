@@ -1,10 +1,14 @@
 ﻿using System;
+using Autofac;
 
 namespace WikiRecorder.Core
 {
 	public class BaseViewModel
 	{
-		protected IWebService webservice = TinyIoC.TinyIoCContainer.Current.Resolve<IWebService>();
+		//protected IWebService webservice = TinyIoC.TinyIoCContainer.Current.Resolve<IWebService>();
+
+		protected IWebService webservice ;
+
 
 		private bool isBusy = false;
 
@@ -22,7 +26,9 @@ namespace WikiRecorder.Core
 
 		public BaseViewModel ()
 		{
-			
+			CustomIOC customIOC = new CustomIOC ();
+			customIOC.createContainer();
+			webservice = CustomIOC.container.Resolve<IWebService>();
 		}
 	}
 }

@@ -33,7 +33,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Source\MyClass.cs" />
     <Compile Include="Source\Webservice\FakeWebservice.cs" />
-    <Compile Include="TinyIoC.cs" />
     <Compile Include="Source\Webservice\IWebService.cs" />
     <Compile Include="Source\ViewModels\BaseViewModel.cs" />
     <Compile Include="Source\ViewModels\LoginViewModel.cs" />
@@ -45,6 +44,11 @@
     <Folder Include="Source\" />
     <Folder Include="Source\Webservice\" />
     <Folder Include="Source\ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

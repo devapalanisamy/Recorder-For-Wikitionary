@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace WikiRecorder.Core
 {
@@ -13,7 +14,7 @@ namespace WikiRecorder.Core
 		public string Password{ get; set;}
 		public string ConfirmPassword{ get; set;}
 
-		public async string RegisterButtonTapped()
+		public async Task<string> RegisterButtonTapped()
 		{
 			if (string.IsNullOrEmpty(UserName))
 				throw new Exception ("Username is blank");
