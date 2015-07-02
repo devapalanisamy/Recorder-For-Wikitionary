@@ -12,7 +12,7 @@ namespace WikiRecorder.Core.Tests
 		public void TestAddingNumbers()
 		{
 			MyClass myClass = new MyClass ();
-			Assert.AreEqual(15, myClass.AddTwoNumbers(10, -5));
+			Assert.AreEqual(15, myClass.AddTwoNumbers(10, 5));
 		}
 
 

@@ -30,6 +30,10 @@ namespace WikiRecorder.Core
 			customIOC.createContainer();
 			webservice = CustomIOC.container.Resolve<IWebService>();
 		}
+
+		public bool GetNetWorkStatus(){
+			return true;
+		}
 	}
 }
 
