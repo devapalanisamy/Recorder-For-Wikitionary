@@ -14,7 +14,7 @@ using Android.Widget;
 
 namespace WikiRecorder.Droid
 {
-	public class BaseFragment : Fragment
+	public abstract class BaseFragment : Fragment
 	{
 		public override void OnCreate(Bundle savedInstanceState)
 		{
@@ -25,9 +25,11 @@ namespace WikiRecorder.Droid
 
 		public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
-			var rootView = inflater.Inflate(Resource.Layout.SignUpLayout, null);
+			var rootView = inflater.Inflate(GetLayOutId(), container,false);
 			return rootView;
 		}
+
+		public abstract int GetLayOutId();
 	}
 }
 

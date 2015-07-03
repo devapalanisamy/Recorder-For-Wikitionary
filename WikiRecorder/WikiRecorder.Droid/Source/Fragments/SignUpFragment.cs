@@ -17,6 +17,11 @@ namespace WikiRecorder.Droid
 	public class SignUpFragment : BaseFragment
 	{
 
+		public override int GetLayOutId()
+		{
+			return Resource.Layout.SignUpLayout;
+		}
+
 	}
 }
 

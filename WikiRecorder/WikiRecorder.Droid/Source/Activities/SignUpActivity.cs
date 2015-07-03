@@ -16,7 +16,10 @@ namespace WikiRecorder.Droid
 	[Activity(Label = "SignUpActivity" , MainLauncher=true)]			
 	public class SignUpActivity : BaseActivity
 	{
-		
+		public override BaseFragment GetFragment()
+		{
+			return new SignUpFragment ();
+		}	
 	}
 }
 

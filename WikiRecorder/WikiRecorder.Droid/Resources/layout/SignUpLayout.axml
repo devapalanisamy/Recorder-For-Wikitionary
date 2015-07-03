@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="@android:color/holo_green_dark"
+    android:weightSum="3">
     <ImageView
         android:src="@android:drawable/ic_menu_gallery"
         android:layout_width="match_parent"

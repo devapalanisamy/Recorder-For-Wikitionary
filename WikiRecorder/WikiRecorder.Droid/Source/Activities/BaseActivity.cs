@@ -14,22 +14,25 @@ using Android.Widget;
 namespace WikiRecorder.Droid
 {
 	[Activity(Label = "BaseActivity")]			
-	public class BaseActivity : Activity
+	public abstract class BaseActivity : Activity
 	{
-		protected override void OnCreate(Bundle bundle)
+		protected override void OnCreate(Bundle savedInstanceState)
 		{
-			base.OnCreate(bundle);
+			base.OnCreate(savedInstanceState);
 
 			SetContentView(Resource.Layout.Main);
-			FragmentManager fm = this.FragmentManager;
-			Fragment fragment = fm.FindFragmentByTag("aSADDSA");   
+
+			FragmentManager fragmentManager = this.FragmentManager;
+			BaseFragment fragment = fragmentManager.FindFragmentByTag("aSADDSA") as BaseFragment;   
 			if (fragment == null) {
-				FragmentTransaction ft = fm.BeginTransaction();
-				fragment = new SignUpFragment ();
-				ft.Add(Resource.Id.superContainer, fragment,"hello");
-				ft.Commit();
+				FragmentTransaction fragmentTransaction = fragmentManager.BeginTransaction();
+				fragment = GetFragment();
+				fragmentTransaction.Replace(Resource.Id.superContainer, fragment,"hello");
+				fragmentTransaction.Commit();
 			}
 		}
+
+		public abstract BaseFragment GetFragment();
 	}
 }
 
