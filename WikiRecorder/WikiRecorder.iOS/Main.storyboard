@@ -13,10 +13,48 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.27485486976185192" blue="0.29441382715745779" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mi2-WA-Qcz">
+                                <rect key="frame" x="25" y="82" width="272" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="CkN-ch-PpJ"/>
+                                    <constraint firstAttribute="width" constant="272" id="HjN-df-wak"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3r-qc-147">
+                                <rect key="frame" x="25" y="399" width="272" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="4Vi-vU-bRV"/>
+                                    <constraint firstAttribute="height" constant="66" id="pZF-gf-0Tv"/>
+                                </constraints>
+                                <state key="normal" title="Register">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwA-Sf-Va7">
+                                <rect key="frame" x="25" y="289" width="272" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="RF2-sl-8uZ"/>
+                                    <constraint firstAttribute="width" constant="272" id="dSf-JV-ToB"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mi2-WA-Qcz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="62" id="0aY-FP-2qa"/>
+                            <constraint firstItem="lwA-Sf-Va7" firstAttribute="top" secondItem="Mi2-WA-Qcz" secondAttribute="bottom" constant="44" id="BMS-Yn-lgC"/>
+                            <constraint firstItem="x3r-qc-147" firstAttribute="top" secondItem="lwA-Sf-Va7" secondAttribute="bottom" constant="44" id="N1Q-uR-hip"/>
+                            <constraint firstAttribute="centerX" secondItem="Mi2-WA-Qcz" secondAttribute="centerX" id="RhE-v9-sYS"/>
+                            <constraint firstAttribute="centerX" secondItem="x3r-qc-147" secondAttribute="centerX" id="hVU-0o-ZzI"/>
+                            <constraint firstAttribute="centerX" secondItem="lwA-Sf-Va7" secondAttribute="centerX" id="mEh-dV-j7P"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
