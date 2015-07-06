@@ -16,7 +16,7 @@
         android:layout_height="44dp"
         android:layout_marginTop="40dp" />
     <Button
-        android:text="Button"
+        android:text="Login"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:id="@+id/button1"

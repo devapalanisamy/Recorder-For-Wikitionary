@@ -8,18 +8,20 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
 
 namespace WikiRecorder.Droid
 {
-	[Activity(Label = "SignUpActivity" , MainLauncher=false)]			
-	public class SignUpActivity : BaseActivity
+	public class LoginFragment : BaseFragment
 	{
-		public override BaseFragment GetFragment()
+
+		public override int GetLayOutId()
 		{
-			return new SignUpFragment ();
-		}	
+			return Resource.Layout.LoginLayout;
+		}
+			
 	}
 }
 

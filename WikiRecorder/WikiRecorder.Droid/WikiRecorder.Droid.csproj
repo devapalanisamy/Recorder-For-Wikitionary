@@ -51,6 +51,8 @@
     <Compile Include="Source\Fragments\BaseFragment.cs" />
     <Compile Include="Source\Fragments\SignUpFragment.cs" />
     <Compile Include="Source\Activities\SignUpActivity.cs" />
+    <Compile Include="Source\Fragments\LoginFragment.cs" />
+    <Compile Include="Source\Activities\LoginActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
