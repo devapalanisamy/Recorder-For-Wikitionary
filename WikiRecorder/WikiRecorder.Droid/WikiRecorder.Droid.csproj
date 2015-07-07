@@ -53,6 +53,8 @@
     <Compile Include="Source\Activities\SignUpActivity.cs" />
     <Compile Include="Source\Fragments\LoginFragment.cs" />
     <Compile Include="Source\Activities\LoginActivity.cs" />
+    <Compile Include="Source\Fragments\RegisterFragment.cs" />
+    <Compile Include="Source\Activities\RegisterActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

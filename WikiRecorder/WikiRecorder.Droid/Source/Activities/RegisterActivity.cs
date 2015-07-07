@@ -13,15 +13,15 @@ using Android.Widget;
 
 namespace WikiRecorder.Droid
 {
-	[Activity(Label = "LoginActivity" ,MainLauncher=false)]			
-	public class LoginActivity : BaseActivity
+	[Activity(Label = "RegisterActivity", MainLauncher=true)]			
+	public class RegisterActivity : BaseActivity
 	{
 
 		public override BaseFragment GetFragment()
 		{
-			return new LoginFragment ();
+			return new RegisterFragment ();
 		}
-
+			
 	}
 }
 
